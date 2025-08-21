@@ -1,0 +1,98 @@
+:root {
+  --yellow: #ffeb3b;
+  --black: #111;
+  --text-light: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--black);
+  color: var(--text-light);
+}
+
+.app {
+  text-align: center;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  padding: 60px 20px;
+}
+
+.hero-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: var(--yellow);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--black);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #f9e64f;
+}
+
+.features, .testimonials, .pricing {
+  padding: 50px 20px;
+}
+
+.feature-list, .testimonial-list, .pricing-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card, .testimonial-card, .pricing-card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.feature-card img, .testimonial-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card img {
+  border-radius: 50%;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-card li {
+  margin: 5px 0;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #000;
+}
+
+.footer .socials img {
+  width: 24px;
+  margin: 0 8px;
+  filter: invert(100%);
+}
