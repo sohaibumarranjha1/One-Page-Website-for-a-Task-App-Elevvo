@@ -2,6 +2,7 @@
 
 🚀 A modern Task Management App built with React.js.
 This app allows users to add, manage, and organize tasks — all on a single-page interface with smooth UI/UX.
+
 **✨ Features**
 
 ⚡ Built with React.js – Component-based, reusable UI
